@@ -454,7 +454,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('img/instagram-banner/01.jpg') }}" alt="food-img">
+                            <img src="{{ asset('img/instagram-banner/insta-1.jpg') }}" alt="food-img">
                             <a href="{{ asset('img/instagram-banner/01.jpg') }}" class="icon img-popup">
                                 <i class="far fa-search"></i>
                             </a>
@@ -464,7 +464,7 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('img/instagram-banner/02.jpg') }}" alt="food-img">
+                            <img src="{{ asset('img/instagram-banner/insta-2.jpg') }}" alt="food-img">
                             <a href="{{ asset('img/instagram-banner/02.jpg') }}" class="icon img-popup">
                                 <i class="far fa-search"></i>
                             </a>
