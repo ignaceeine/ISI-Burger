@@ -12,7 +12,14 @@ class PasswordConfirmationTest extends TestCase
 
     public function test_confirm_password_screen_can_be_rendered(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User8',
+            'telephone' => '3129156789',
+            'email' => 'test8@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this->actingAs($user)->get('/confirm-password');
 
@@ -21,7 +28,14 @@ class PasswordConfirmationTest extends TestCase
 
     public function test_password_can_be_confirmed(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User10',
+            'telephone' => '3102456789',
+            'email' => 'test10@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this->actingAs($user)->post('/confirm-password', [
             'password' => 'password',
