@@ -2,8 +2,8 @@
 @section('title','Accueil')
 @section('content')
     <!-- Dashboard Content -->
-    <div class="container-fluid py-4">
-        <div class="row g-4">
+    <div class="container-fluid py-2">
+        <div class="row">
             <!-- Total Menus Card -->
             <div class="col-md-4">
                 <a href="" class="text-decoration-none">
@@ -131,13 +131,13 @@
                 <script>
                     const ctx1 = document.getElementById('commandesChart').getContext('2d');
                     const chart1 = new Chart(ctx1, {
-                        type: 'line', // Type de graphique : barres
+                        type: 'bar', // Type de graphique : barres
                         data: {
                             labels: @json($plabels), // Les noms des produits
                             datasets: [{
                                 label: 'Nombre de Commandes',
                                 data: @json($pdata), // Le nombre de commandes par produit
-                                backgroundColor: 'rgba(255,205,3,0.53)',
+                                backgroundColor: 'rgb(241,96,96)',
                                 borderColor: 'rgb(175,145,2)',
                                 borderWidth: 1
                             }]

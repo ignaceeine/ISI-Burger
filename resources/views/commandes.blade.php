@@ -1,4 +1,7 @@
-@php use App\Enums\StatutCommande; @endphp
+@php
+    use Carbon\Carbon;
+    use App\Enums\StatutCommande;
+ @endphp
 @extends('layouts.masterGest')
 @section('title','Commandes')
 
@@ -41,7 +44,7 @@
                             <tr>
                                 <td>{{ $c->id }}</td>
                                 <td>{{ $c->user->name }}</td>
-                                <td>{{ $c->date }}</td>
+                                <td>{{ Carbon::parse($c->date)->format('d M Y') }}</td>
                                 <td>
                                     <select class="form-select form-select-sm status-select" data-id="{{ $c->id }}">
                                         <option value="En attente" class="text-warning" {{ $c->statut == StatutCommande::EnAttente ? 'selected' : '' }}>
