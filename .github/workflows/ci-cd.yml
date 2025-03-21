@@ -65,4 +65,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Docker image
-        run: docker build -t my-laravel-app .
+        run: docker build -t isi-burger:latest .
+
+      - name: Push Docker image
+        run: |
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+          docker tag isi-burger:latest ${{ secrets.DOCKER_USERNAME }}/isi-burger:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/isi-burger:latest
