@@ -12,7 +12,14 @@ class ProfileTest extends TestCase
 
     public function test_profile_page_is_displayed(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User21',
+            'telephone' => '012349857',
+            'email' => 'test21@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this
             ->actingAs($user)
@@ -23,7 +30,14 @@ class ProfileTest extends TestCase
 
     public function test_profile_information_can_be_updated(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User22',
+            'telephone' => '234567890',
+            'email' => 'test22@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this
             ->actingAs($user)
@@ -45,7 +59,14 @@ class ProfileTest extends TestCase
 
     public function test_email_verification_status_is_unchanged_when_the_email_address_is_unchanged(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User23',
+            'telephone' => '001122334455',
+            'email' => 'test23@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this
             ->actingAs($user)
@@ -63,7 +84,14 @@ class ProfileTest extends TestCase
 
     public function test_user_can_delete_their_account(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User24',
+            'telephone' => '0987654321',
+            'email' => 'test24@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this
             ->actingAs($user)
@@ -81,7 +109,14 @@ class ProfileTest extends TestCase
 
     public function test_correct_password_must_be_provided_to_delete_account(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User25',
+            'telephone' => '086425790',
+            'email' => 'test25@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this
             ->actingAs($user)
