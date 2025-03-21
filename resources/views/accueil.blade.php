@@ -447,6 +447,74 @@
         </div>
     </section>
 
+    <!-- Team Section Start -->
+    <section class="team-section section-bg fix">
+        <div class="container mb-5">
+            <div class="section-title text-center">
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">MEET OUR EXPERT CHEFS</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-team-items">
+                        <div class="team-image">
+                            <img src="{{ asset('img/team/01.jpg') }}" alt="team-img">
+                            <div class="social-link">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <p>head chef</p>
+                            <h3>
+                                <a href="#">Leslie Alexander</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-team-items active">
+                        <div class="team-image">
+                            <img src="{{ asset('img/team/02.jpg') }}" alt="team-img">
+                            <div class="social-link">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <p>sr table manager</p>
+                            <h3>
+                                <a href="#">HENRY LUCAS</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="single-team-items">
+                        <div class="team-image">
+                            <img src="{{ asset('img/team/03.jpg') }}" alt="team-img">
+                            <div class="social-link">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <p>senoir cooker</p>
+                            <h3>
+                                <a href="">MATEO LEVI</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Instagram Banner Section Start -->
     <div class="instagram-banner fix">
         <div class="swiper instagram-banner-slider">
@@ -465,7 +533,7 @@
                     <div class="instagram-banner-items">
                         <div class="banner-image">
                             <img src="{{ asset('img/instagram-banner/insta-2.jpg') }}" alt="food-img">
-                            <a href="{{ asset('img/instagram-banner/02.jpg') }}" class="icon img-popup">
+                            <a href="{{ asset('img/instagram-banner/insta-2.jpg') }}" class="icon img-popup">
                                 <i class="far fa-search"></i>
                             </a>
                         </div>
@@ -474,8 +542,8 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('img/instagram-banner/03.jpg') }}" alt="food-img">
-                            <a href="{{ asset('img/instagram-banner/03.jpg') }}" class="icon img-popup">
+                            <img src="{{ asset('img/instagram-banner/insta-3.jpg') }}" alt="food-img">
+                            <a href="{{ asset('img/instagram-banner/insta-3.jpg') }}" class="icon img-popup">
                                 <i class="far fa-search"></i>
                             </a>
                         </div>
@@ -484,8 +552,8 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('img/instagram-banner/04.jpg') }}" alt="food-img">
-                            <a href="{{ asset('img/instagram-banner/04.jpg') }}" class="icon img-popup">
+                            <img src="{{ asset('img/instagram-banner/insta-4.jpg') }}" alt="food-img">
+                            <a href="{{ asset('img/instagram-banner/insta-4.jpg') }}" class="icon img-popup">
                                 <i class="far fa-search"></i>
                             </a>
                         </div>
@@ -494,8 +562,8 @@
                 <div class="swiper-slide">
                     <div class="instagram-banner-items">
                         <div class="banner-image">
-                            <img src="{{ asset('img/instagram-banner/05.jpg') }}" alt="food-img">
-                            <a href="{{ asset('img/instagram-banner/05.jpg') }}" class="icon img-popup">
+                            <img src="{{ asset('img/instagram-banner/insta-5.jpg') }}" alt="food-img">
+                            <a href="{{ asset('img/instagram-banner/insta-5.jpg') }}" class="icon img-popup">
                                 <i class="far fa-search"></i>
                             </a>
                         </div>
