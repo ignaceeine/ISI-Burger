@@ -361,10 +361,10 @@
                             </h4>
                             <h3>french fry</h3>
                             <h5>This Weekend only</h5>
-                            <a href="shop-single.blade.php" class="theme-btn bg-yellow">
+                            <a href="{{ route('menu') }}" class="theme-btn bg-yellow">
                                 <span class="button-content-wrapper d-flex align-items-center">
                                 <span class="button-icon"><i class="flaticon-delivery"></i></span>
-                                <span class="button-text">order now</span>
+                                <span class="button-text">Commander vite</span>
                                 </span>
                             </a>
                         </div>
