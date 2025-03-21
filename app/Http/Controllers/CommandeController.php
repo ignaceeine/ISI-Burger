@@ -48,7 +48,7 @@ class CommandeController extends Controller
         }
 
         Mail::to(Auth::user()->email)->send(new ConfirmationCommandeMail($cart));
-        //Mail::to('seck10@gmail.com')->send(new NotificationCommandeMail());
+        Mail::to('seck10@gmail.com')->send(new NotificationCommandeMail());
         session()->forget('panier');
 
         return redirect()->back()->with('success','Votre commande a été bien prise en charge ! Vous recevrez un email de confirmation sous peu.');
