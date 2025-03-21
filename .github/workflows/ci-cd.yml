@@ -23,25 +23,46 @@ jobs:
         with:
           php-version: '8.2' # Ajustez selon la version de PHP requise par votre projet
 
-      # Étape 3 : Installer les dépendances Composer
+      # Étape 3 : Configurer Node.js pour Vite
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # Étape 4 : Installer les dépendances Composer
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress
 
-      # Étape 4 : Exécuter les tests
+      # Étape 5 : Installer les dépendances npm et construire les assets
+      - name: Install npm dependencies and build assets
+        run: |
+          npm install
+          npm run build
+
+      # Étape 6 : Configurer l’environnement
+      - name: Set up environment
+        run: |
+          cp .env.example .env.testing
+          echo "APP_KEY=base64:abcdefghijklmnopqrstuvwxyz1234567890=" >> .env.testing
+          echo "DB_CONNECTION=sqlite" >> .env.testing
+          echo "DB_DATABASE=:memory:" >> .env.testing
+          php artisan config:clear
+
+      # Étape 7 : Exécuter les migrations
+      - name: Run migrations
+        run: php artisan migrate --env=testing
+
+      # Étape 8 : Exécuter les tests
       - name: Run tests
         run: vendor/bin/phpunit
 
-  # Job pour construire l'image Docker
   build:
-    # Ce job ne s'exécute que si le job 'tests' réussit
     needs: tests
     runs-on: ubuntu-latest
 
     steps:
-      # Étape 1 : Récupérer le code de la branche
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Étape 2 : Construire l'image Docker
       - name: Build Docker image
         run: docker build -t my-laravel-app .
