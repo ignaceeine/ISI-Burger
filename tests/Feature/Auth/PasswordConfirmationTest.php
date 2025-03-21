@@ -47,7 +47,14 @@ class PasswordConfirmationTest extends TestCase
 
     public function test_password_is_not_confirmed_with_invalid_password(): void
     {
-        $user = User::factory()->create();
+        $user = User::create([
+            'name' => 'Test User20',
+            'telephone' => '0123412389',
+            'email' => 'test20@example.com',
+            'adresse' => 'Test Adresse',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
 
         $response = $this->actingAs($user)->post('/confirm-password', [
             'password' => 'wrong-password',
