@@ -326,77 +326,6 @@
         </div>
     </section>
 
-    <!-- Food Banner Section Start -->
-    <section class="food-banner-section section-padding fix">
-        <div class="burger-shape-2">
-            <img src="{{ asset('img/shape/burger-shape-2.png') }}" alt="shape-img">
-        </div>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="single-offer-items bg-cover style-3" style="background-image: url({{ asset('img/banner/offer-bg-2.png') }});">
-                        <div class="offer-content">
-                            <h5>crispy, every bite taste</h5>
-                            <h3>
-                                Delicious & <br>
-                                hot pizza
-                            </h3>
-                            <a href="shop-single.blade.php" class="link-btn">
-                                order now <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="offer-image-2">
-                            <img src="{{ asset('img/offer/50percent-off-2.png') }}" alt="offer-img">
-                        </div>
-                        <div class="small-pizza">
-                            <img src="{{ asset('img/food/small-pizza.png') }}" alt="pizza-img">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="single-offer-items bg-cover style-3" style="background-image: url({{ asset('img/banner/french-fry-bg.png') }});">
-                        <div class="french-content">
-                            <h4>
-                                <span>Todays</span>Delicious
-                            </h4>
-                            <h3>french fry</h3>
-                            <h5>This Weekend only</h5>
-                            <a href="{{ route('menu') }}" class="theme-btn bg-yellow">
-                                <span class="button-content-wrapper d-flex align-items-center">
-                                <span class="button-icon"><i class="flaticon-delivery"></i></span>
-                                <span class="button-text">Commander vite</span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="french-image">
-                            <img src="{{ asset('img/food/french-fry.png') }}" alt="food-img">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="single-offer-items bg-cover style-3" style="background-image: url({{ asset('img/banner/chiken-bg.png') }});">
-                        <div class="offer-content">
-                            <h5>crispy, every bite taste</h5>
-                            <h3>
-                                chiken & <br>
-                                french fry
-                            </h3>
-                            <a href="shop-single.blade.php" class="link-btn">
-                                order now <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="offer-shape-3">
-                            <img src="{{ asset('img/offer/50percent-off-4.png') }}" alt="shape-img">
-                        </div>
-                        <div class="main-food-3">
-                            <img src="{{ asset('img/food/main-food-3.png') }}" alt="pizza-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Choose Us Section Start -->
     <section class="choose-us fix section-padding pt-0 section-bg">
         <div class="container">
@@ -451,13 +380,13 @@
     <section class="team-section section-bg fix">
         <div class="container mb-5">
             <div class="section-title text-center">
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">MEET OUR EXPERT CHEFS</h2>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">RENCONTREZ NOTRE EQUIPE D'EXPERTS</h2>
             </div>
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                     <div class="single-team-items">
                         <div class="team-image">
-                            <img src="{{ asset('img/team/01.jpg') }}" alt="team-img">
+                            <img src="{{ asset('img/team/nouradine.jpeg') }}" alt="team-img">
                             <div class="social-link">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -466,9 +395,9 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <p>head chef</p>
+                            <p>chef cuisinier</p>
                             <h3>
-                                <a href="#">Leslie Alexander</a>
+                                <a href="#">Nouradine Seid NOURADINE</a>
                             </h3>
                         </div>
                     </div>
@@ -476,7 +405,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                     <div class="single-team-items active">
                         <div class="team-image">
-                            <img src="{{ asset('img/team/02.jpg') }}" alt="team-img">
+                            <img src="{{ asset('img/team/amadou.jpeg') }}" alt="team-img">
                             <div class="social-link">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -485,9 +414,9 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <p>sr table manager</p>
+                            <p>gestionnaire de commandes</p>
                             <h3>
-                                <a href="#">HENRY LUCAS</a>
+                                <a href="#">Amadou SECK</a>
                             </h3>
                         </div>
                     </div>
@@ -495,7 +424,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                     <div class="single-team-items">
                         <div class="team-image">
-                            <img src="{{ asset('img/team/03.jpg') }}" alt="team-img">
+                            <img src="{{ asset('img/team/saliou.jpeg') }}" alt="team-img">
                             <div class="social-link">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -504,9 +433,9 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <p>senoir cooker</p>
+                            <p>chef cuisinier senior</p>
                             <h3>
-                                <a href="">MATEO LEVI</a>
+                                <a href="">Saliou SENE</a>
                             </h3>
                         </div>
                     </div>
